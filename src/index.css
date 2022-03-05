@@ -1,13 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.navbarContainer {
+  display: flex;
+  padding: 2px;
+  box-shadow: 0 0 25px black;
+  background-image: linear-gradient(to right, red, yellow);
+}
+
+.navbarA {
+  width: 50%;
+  display: flex;
+}
+
+.logoDiv {
+  display: flex;
+  width: 25%;
+  justify-content: center;
+  align-items: center;
+}
+
+.logoImage {
+  height: 120px;
+  cursor: pointer;
+  border-radius: 100%;
+}
+
+img {
+  transition: transform 0.7s ease-in-out;
+}
+img:hover {
+  transform: rotate(180deg);
+}
+
+.nameDiv {
+  display: flex;
+  width: 75%;
+  font-size: 45px;
+  font-weight: bolder;
+  align-items: center;
+  font-family: "Syne Mono", monospace;
+  color: white;
+  cursor: pointer;
+}
+
+.nameDiv:hover {
+  text-shadow: 2px 2px black;
+}
+
+.navbarB {
+  display: flex;
+  width: 50%;
+  gap: 50px;
+  justify-content: flex-end;
+}
+
+.links {
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.homeBtn {
+  background-color: transparent;
+  box-shadow: 0 0 6px #202c39;
+  border: none;
+  color: white;
+  background-color: #9b2226;
+  font-weight: bolder;
+  height: 50px;
+  width: 90px;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease 0s;
+}
+
+.homeBtn:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+.aboutBtn {
+  background-color: transparent;
+  box-shadow: 0 0 6px #202c39;
+  background-color: #9b2226;
+  color: white;
+  border: none;
+  font-weight: bold;
+  height: 50px;
+  width: 90px;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease 0s;
+}
+
+.aboutBtn:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
 }
